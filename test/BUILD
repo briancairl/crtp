@@ -1,0 +1,10 @@
+cc_test(
+    name="crtp",
+    srcs=["crtp.cpp"],
+    copts=["-Iexternal/googletest/googletest/include"],
+    deps=[
+        "//:crtp",
+        "@googletest//:gtest",
+    ],
+    timeout="short",
+)
